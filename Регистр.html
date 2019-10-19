@@ -1,0 +1,35 @@
+﻿
+<form method="POST" action="/join" data-noajax="">
+<h2 class="join_header">Регистрация</h2>
+<p class="join_desc">Добро пожаловать на социальную соц сеть - zik123123 здесь ты сможешь общятся  играть в игры и прочее</p>
+<div class="fi_row"><input name="name" class="textfield" placeholder="Ваше Имя" type="text"></div>
+<div class="fi_row"><input name="family" class="textfield" placeholder="Фамилия" type="text"></div>
+
+<div class="fi_row">
+<div class="fi_label">Для входа на сайт</div>
+<input name="nick" class="textfield" placeholder="Никнейм" type="text">
+</div>
+<div class="fi_row"><input name="pass" class="textfield" placeholder="Пароль" type="text"></div>
+<div class="fi_row">
+<div class="fi_label">Ваш пол</div>
+<select name="pol" class="sel">
+<option value="1">Мужской</option>
+<option value="0">Женский</option>
+</select>
+</div>
+<div class="fi_row_new">
+<input class="button" value="Зарегистрироваться" name="cfms" type="submit">
+</div>
+<div class="fi_row">
+<div class="near_btn wide_button"><a href="/"></a></div>
+</div>
+</form>
+</div>
+</div>
+<?
+
+# Низ сайта
+include_once 'sys/inc/tfoot.php';
+?>
+ 
+

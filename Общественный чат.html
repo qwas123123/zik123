@@ -1,0 +1,38 @@
+﻿
+<div id="radiobells_container"><a href="https://www.radiobells.com/" rel="nofollow" id="RP_link">Ìóçûêà</a> #radiobells_script_hash</div><link href="https://www.radiobells.com/script/style.css" type="text/css" rel="stylesheet" /><script type="text/javascript">var rad_backcolor="#434242"; var rad_logo = "white"; var rad_autoplay = true; var rad_width = "fixed"; var rad_width_px = 330;var rad_stations =[['http://emgregion.hostingradio.ru:8064/moscow.europaplus.mp3','Åâðîïà ïëþñ','europaplus'],['http://air.radiorecord.ru:805/rr_320','Ðàäèî Ðåêîðä','radiorecord'],['http://air.radiorecord.ru:805/rmx_320','Record Remix','recordremix'],['http://radio-nice.ru:8050/stream','Radio Nice Deep House','radionicedeephouse'],['http://emg02.hostingradio.ru/ep-light128.mp3','Åâðîïà Ïëþñ: Ëàéò','europapluslight'],['http://online.radioc.ru:8000/radioc_aacplus','Ðàäèî Ñè','radioci'],['http://dodofm.ru:8000/radio','Dodo Fm','dodofm'],['http://194.87.111.252:8000/live','Nu Euphoria Trance Radio','nueuphoria'],['https://rr-russkijrok.hostingradio.ru/russkijrok96.aacp','Ðóññêîå Ðàäèî: Ðóññêèé Ðîê','rusradiorock']];</script><script type="text/javascript" src="https://www.radiobells.com/script/v2_1.js" charset="UTF-8"></script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" ></script>
+<script type="text/javascript" src="https://comet-server.ru/CometServerApi.js" ></script>
+<script type="text/javascript" src="https://comet-server.ru/doc/html_chat.js" ></script>
+<link rel="stylesheet" type="text/css" href="https://comet-server.ru/doc/html_chat.css"></link>
+ 
+<!-- Осталось настроить сам чат и запустить, для этого пишем небольшой скрипт. -->
+<div id="html-chat"></div>
+<style>
+/* Здесь настроим css стили для чата*/
+.holder-html-chat{ border: 1px solid #ccc;padding:10px;background-color: #fff;width: 600px;}
+.html-chat-history{ max-width: 600px; overflow: auto;max-height: 900px; border: 1px solid #ccc;padding: 5px;}
+.html-chat-js-name{ margin-top:10px; }
+.html-chat-js-input{ max-width: 600px;max-height: 100px;width: 600px;margin-top:10px; }
+.html-chat-js-button-holder{ margin-bottom: 0px;margin-top: 10px; }
+.html-chat-js-button-holder input{ width: 220px; }
+.html-chat-js-answer{ float:right; }
+.html-chat-js-answer a{ color: #777;font-size: 12px; font-family: cursive;}
+.html-chat-js-answer a:hover{ color: #338;font-size: 12px; font-family: cursive;}
+.html-chat-msg{ margin: 0px; }
+</style>
+ <script>
+ 
+   /**
+    * Чат работает на comet-server.ru
+    * По любым вопросам обращайтесь support@comet-server.ru или на сайт comet-server.ru
+    */
+    $(document).ready(function()
+    {
+       // Запуск api комет сервера
+       CometServer().start({dev_id: 15 }) // Идентификатор разработчика на comet-server.ru
+ 
+       // Запуск чата. Передаём ему элемент в котором надо создать окно чата.
+       htmljs_Chat_Init( $("#html-chat") )
+    });
+</script>
